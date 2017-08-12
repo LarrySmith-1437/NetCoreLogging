@@ -1,0 +1,11 @@
+﻿{
+  "NetCoreLogger": {
+    "DaysToRetain": 5,
+    "ConsoleLogLevel": "Error",
+    "FileLogLevel": "Fatal",
+    "LogDirectory": "Loging",
+    "LogEntryLayout": "{date:format=yyyy-MM-dd HH:mm:ss}\t{level}\t{message}",
+    "LogFileName": "svclog_{date:format=yyyy-MM-dd}.log",
+    "LogToConsole": "true"
+  }
+}
