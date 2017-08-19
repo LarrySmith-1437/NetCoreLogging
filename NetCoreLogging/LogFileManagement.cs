@@ -70,9 +70,9 @@ namespace NetCoreLogging
             File.AppendAllText(logFile, content, Encoding.UTF8);
         }
 
-        public static async Task WriteLogAsync(string logFile, string content)
-        {
-            await File.AppendAllTextAsync(logFile, content, Encoding.UTF8);
-        }
+        //public static async Task WriteLogAsync(string logFile, string content)
+        //{
+        //    await File.AppendAllTextAsync(logFile, content, Encoding.UTF8);
+        //}
     }
 }
