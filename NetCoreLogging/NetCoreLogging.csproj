@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Lawrence M. Smith</Authors>
+    <Company>Lawrence M. Smith Consulting, LLC</Company>
+    <Description>Provides the most basic functionality of logging for .Net Standard 2.0 and .Net Core 2.0 projects</Description>
+    <Copyright>2017</Copyright>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/LarrySmith-1437/NetCoreLogging</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
