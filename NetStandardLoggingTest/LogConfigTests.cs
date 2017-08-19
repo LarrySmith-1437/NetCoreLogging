@@ -1,16 +1,16 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using NetCoreLogging;
+using NetStandardLogging;
 using System;
 
-namespace NetCoreLoggingTest
+namespace NetStandardLoggingTest
 {
     [TestClass]
     public class LogConfigTests
     {
         [TestMethod]
-        public void ReadConfigFromNetCoreLoggingJson()
+        public void ReadConfigFromNetStandardLoggingJson()
         {
-            var logging = new NetCoreLogger("netcorelogging.json");
+            var logging = new NetCoreLogger("NetStandardLogging.json");
 
             Assert.AreEqual(5, logging.ConfigurationSettings.DaysToRetain);
             Assert.AreEqual("Error", logging.ConfigurationSettings.ConsoleLogLevel);

@@ -1,7 +1,7 @@
-﻿namespace NetCoreLogging
+﻿namespace NetStandardLogging
 
 {
-    public class NetCoreLoggingConfigSettings
+    public class NetStandardLoggingConfigSettings
     {
         public string LogDirectory { get; set; }
         public string LogFileName { get; set; }

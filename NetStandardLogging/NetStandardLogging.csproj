@@ -8,7 +8,7 @@
     <Description>Provides the most basic functionality of logging for .Net Standard 2.0 and .Net Core 2.0 projects</Description>
     <Copyright>2017</Copyright>
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/LarrySmith-1437/NetCoreLogging</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/LarrySmith-1437/NetStandardLogging</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NetCoreLoggingInterface\NetCoreLoggingInterface.csproj" />
+    <ProjectReference Include="..\NetStandardLoggingInterface\NetStandardLoggingInterface.csproj" />
   </ItemGroup>
 
 </Project>

@@ -13,14 +13,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="netcorelogging.json" />
+    <None Remove="NetStandardLogging.json" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="config.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="netcorelogging.json">
+    <Content Include="NetStandardLogging.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -32,7 +32,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NetCoreLogging\NetCoreLogging.csproj" />
+    <ProjectReference Include="..\NetStandardLogging\NetStandardLogging.csproj" />
   </ItemGroup>
 
 </Project>

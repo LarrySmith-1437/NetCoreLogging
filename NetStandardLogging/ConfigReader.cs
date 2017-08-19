@@ -4,11 +4,11 @@ using System.Text;
 using Microsoft.Extensions.Configuration;
 using System.IO;
 
-namespace NetCoreLogging
+namespace NetStandardLogging
 {
     public static class ConfigReader
     {
-        public static NetCoreLoggingConfigSettings ReadConfig(string fileName)
+        public static NetStandardLoggingConfigSettings ReadConfig(string fileName)
         {
             var configFileInfo = new FileInfo(fileName);
             if (!configFileInfo.Exists)
@@ -20,20 +20,20 @@ namespace NetCoreLogging
                 .AddJsonFile(configFileInfo.Name, optional: false, reloadOnChange: true);
             var configuration = builder.Build();
 
-            NetCoreLoggingConfigSettings config = new NetCoreLoggingConfigSettings();
+            NetStandardLoggingConfigSettings config = new NetStandardLoggingConfigSettings();
 
             configuration.GetSection("NetCoreLogger").Bind(config);
 
             return config;
         }
-        public static NetCoreLoggingConfigSettings ReadConfig()
+        public static NetStandardLoggingConfigSettings ReadConfig()
         {
             var currentDir = Directory.GetCurrentDirectory();
             var fileNameList = new List<string>()
             {
                 "config.json",
                 "applicationsettings.json",
-                "netcorelogging.json"
+                "NetStandardLogging.json"
             };
             foreach (var file in fileNameList)
             {

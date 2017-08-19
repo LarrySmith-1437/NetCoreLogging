@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace NetCoreLoggingInterface
+namespace NetStandardLoggingInterface
 {
     public interface IAppLogger
     {

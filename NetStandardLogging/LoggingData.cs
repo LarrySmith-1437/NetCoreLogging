@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NetCoreLogging
+namespace NetStandardLogging
 {
     public class LoggingData
     {
-        public NetCoreLoggingConfigSettings ConfigurationSettings { get; set; }
+        public NetStandardLoggingConfigSettings ConfigurationSettings { get; set; }
         public LogLevel LogLevel { get; set; }
 
         private DateTime? _currentDateTime;

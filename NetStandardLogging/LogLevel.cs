@@ -1,5 +1,5 @@
 ﻿
-namespace NetCoreLogging
+namespace NetStandardLogging
 {
     public enum LogLevel
     {

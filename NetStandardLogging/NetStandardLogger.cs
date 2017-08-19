@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Threading.Tasks;
-using NetCoreLoggingInterface;
+using NetStandardLoggingInterface;
 
-namespace NetCoreLogging
+namespace NetStandardLogging
 {
     public class NetCoreLogger : IAppLogger
     {
-        public NetCoreLoggingConfigSettings ConfigurationSettings { get; set; }
+        public NetStandardLoggingConfigSettings ConfigurationSettings { get; set; }
 
         private LogLevel? _fileLogLevelAsEnum = null;
         public LogLevel FileLogLevelAsEnum
@@ -44,7 +44,7 @@ namespace NetCoreLogging
             ConfigurationSettings = ConfigReader.ReadConfig(configFileName);
         }
 
-        public NetCoreLogger(NetCoreLoggingConfigSettings config)
+        public NetCoreLogger(NetStandardLoggingConfigSettings config)
         {
             ConfigurationSettings = config;
         }

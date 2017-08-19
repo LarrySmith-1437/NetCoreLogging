@@ -5,7 +5,7 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Linq;
 
-namespace NetCoreLogging
+namespace NetStandardLogging
 {
     public static class LogFileManagement
     {

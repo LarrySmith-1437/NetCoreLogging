@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreLoggingInterface", "NetCoreLoggingInterface\NetCoreLoggingInterface.csproj", "{D16036E5-2E98-466B-B21E-09832DC7031A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetStandardLoggingInterface", "NetStandardLoggingInterface\NetStandardLoggingInterface.csproj", "{D16036E5-2E98-466B-B21E-09832DC7031A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreLogging", "NetCoreLogging\NetCoreLogging.csproj", "{BA184665-06C3-4DF7-B6B0-4A02333E7584}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetStandardLogging", "NetStandardLogging\NetStandardLogging.csproj", "{BA184665-06C3-4DF7-B6B0-4A02333E7584}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreLoggingTest", "NetCoreLoggingTest\NetCoreLoggingTest.csproj", "{EA0A369D-F41F-4FB6-AA22-C64C4D363531}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetStandardLoggingTest", "NetStandardLoggingTest\NetStandardLoggingTest.csproj", "{EA0A369D-F41F-4FB6-AA22-C64C4D363531}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

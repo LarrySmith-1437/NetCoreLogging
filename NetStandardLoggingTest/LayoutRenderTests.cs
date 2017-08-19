@@ -1,8 +1,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using NetCoreLogging;
+using NetStandardLogging;
 using System;
 
-namespace NetCoreLoggingTest
+namespace NetStandardLoggingTest
 {
     [TestClass]
     public class LayoutRenderTests
