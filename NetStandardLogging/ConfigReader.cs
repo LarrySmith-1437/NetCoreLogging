@@ -20,15 +20,27 @@ namespace NetStandardLogging
                 .AddJsonFile(configFileInfo.Name, optional: false, reloadOnChange: true);
             var configuration = builder.Build();
 
-            var configSection = configuration.GetSection("NetStandardLogger");
-            if(null == configSection.Value)
-                throw new ApplicationException("Could not find a config section for 'NetStandardLogger'");
-
+            
             NetStandardLoggingConfigSettings config = new NetStandardLoggingConfigSettings();
             configuration.GetSection("NetStandardLogger").Bind(config);
 
+            if(!ValidateConfiguration(config))
+                throw new ApplicationException("Could not read configuration section 'NetStandardLOgger'");
+
             return config;
         }
+
+        public static bool ValidateConfiguration(NetStandardLoggingConfigSettings config)
+        {
+            if (null == config.ConsoleLogLevel) return false;
+            if (null == config.FileLogLevel) return false;
+            if (null == config.LogDirectory) return false;
+            if (null == config.LogEntryLayout) return false;
+            if (null == config.LogFileName) return false;
+
+            return true;
+        }
+
         public static NetStandardLoggingConfigSettings ReadConfig()
         {
             var currentDir = Directory.GetCurrentDirectory();

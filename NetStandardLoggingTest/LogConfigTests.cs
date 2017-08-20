@@ -23,9 +23,24 @@ namespace NetStandardLoggingTest
             Assert.AreEqual(LogLevel.Fatal, logging.FileLogLevelAsEnum);
         }
         [TestMethod]
-        public void ReadConfigDefaultFromConfigJson()
+        public void ReadConfigDefaultFromNetStandardLogging()
         {
             var logging = new NetStandardLogger();
+            Assert.AreEqual(5, logging.ConfigurationSettings.DaysToRetain);
+            Assert.AreEqual("Error", logging.ConfigurationSettings.ConsoleLogLevel);
+            Assert.AreEqual("Fatal", logging.ConfigurationSettings.FileLogLevel);
+            Assert.AreEqual("Loging", logging.ConfigurationSettings.LogDirectory);
+            Assert.AreEqual("{date:format=yyyy-MM-dd HH:mm:ss}\t{level}\t{message}", logging.ConfigurationSettings.LogEntryLayout);
+            Assert.AreEqual("svclog_{date:format=yyyy-MM-dd}.log", logging.ConfigurationSettings.LogFileName);
+            Assert.AreEqual(true, logging.ConfigurationSettings.LogToConsole);
+            Assert.AreEqual(LogLevel.Error, logging.ConsoleLogLevelAsEnum);
+            Assert.AreEqual(LogLevel.Fatal, logging.FileLogLevelAsEnum);
+        }
+
+        [TestMethod]
+        public void ReadConfigDefaultFromConfigJson()
+        {
+            var logging = new NetStandardLogger("config.json");
 
             Assert.AreEqual(3, logging.ConfigurationSettings.DaysToRetain);
             Assert.AreEqual("Debug", logging.ConfigurationSettings.ConsoleLogLevel);
@@ -37,6 +52,16 @@ namespace NetStandardLoggingTest
             Assert.AreEqual(LogLevel.Debug, logging.ConsoleLogLevelAsEnum);
             Assert.AreEqual(LogLevel.Info, logging.FileLogLevelAsEnum);
         }
+
+
+        [TestMethod]
+        [ExpectedException(typeof(ApplicationException))]
+        public void ReadConfigMissingSection()
+        {
+            var logging = new NetStandardLogger("configHasWrongSectionName.json");
+
+        }
+
     }
 
 }
