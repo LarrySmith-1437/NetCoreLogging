@@ -4,7 +4,7 @@ using NetStandardLoggingInterface;
 
 namespace NetStandardLogging
 {
-    public class NetCoreLogger : IAppLogger
+    public class NetStandardLogger : IAppLogger
     {
         public NetStandardLoggingConfigSettings ConfigurationSettings { get; set; }
 
@@ -34,17 +34,17 @@ namespace NetStandardLogging
             }
         }
 
-        public NetCoreLogger()
+        public NetStandardLogger()
         {
             ConfigurationSettings = ConfigReader.ReadConfig();
         }
 
-        public NetCoreLogger(string configFileName)
+        public NetStandardLogger(string configFileName)
         {
             ConfigurationSettings = ConfigReader.ReadConfig(configFileName);
         }
 
-        public NetCoreLogger(NetStandardLoggingConfigSettings config)
+        public NetStandardLogger(NetStandardLoggingConfigSettings config)
         {
             ConfigurationSettings = config;
         }

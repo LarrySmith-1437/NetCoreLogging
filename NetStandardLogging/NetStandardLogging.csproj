@@ -5,10 +5,17 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Lawrence M. Smith</Authors>
     <Company>Lawrence M. Smith Consulting, LLC</Company>
-    <Description>Provides the most basic functionality of logging for .Net Standard 2.0 and .Net Core 2.0 projects</Description>
+    <Description>Provides the most basic functionality of logging for .Net Standard 2.0 and .Net Core 2.0 projects.
+The project allows logging to a file or the console, with timestamps, and with the minimal of a json config file.
+
+See the test project under the project URL for usage and a sample config section.</Description>
     <Copyright>2017</Copyright>
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/LarrySmith-1437/NetStandardLogging</PackageProjectUrl>
+    <PackageTags>NetStandard2.0</PackageTags>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

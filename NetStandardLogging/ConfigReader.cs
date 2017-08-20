@@ -22,7 +22,7 @@ namespace NetStandardLogging
 
             NetStandardLoggingConfigSettings config = new NetStandardLoggingConfigSettings();
 
-            configuration.GetSection("NetCoreLogger").Bind(config);
+            configuration.GetSection("NetStandardLogger").Bind(config);
 
             return config;
         }

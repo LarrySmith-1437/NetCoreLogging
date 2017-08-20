@@ -1,5 +1,5 @@
 ﻿{
-  "NetCoreLogger": {
+  "NetStandardLogger": {
     "DaysToRetain": 5,
     "ConsoleLogLevel": "Error",
     "FileLogLevel": "Fatal",

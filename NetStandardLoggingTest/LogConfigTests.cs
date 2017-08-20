@@ -10,7 +10,7 @@ namespace NetStandardLoggingTest
         [TestMethod]
         public void ReadConfigFromNetStandardLoggingJson()
         {
-            var logging = new NetCoreLogger("NetStandardLogging.json");
+            var logging = new NetStandardLogger("NetStandardLogging.json");
 
             Assert.AreEqual(5, logging.ConfigurationSettings.DaysToRetain);
             Assert.AreEqual("Error", logging.ConfigurationSettings.ConsoleLogLevel);
@@ -25,7 +25,7 @@ namespace NetStandardLoggingTest
         [TestMethod]
         public void ReadConfigDefaultFromConfigJson()
         {
-            var logging = new NetCoreLogger();
+            var logging = new NetStandardLogger();
 
             Assert.AreEqual(3, logging.ConfigurationSettings.DaysToRetain);
             Assert.AreEqual("Debug", logging.ConfigurationSettings.ConsoleLogLevel);
