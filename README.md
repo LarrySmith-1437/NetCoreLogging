@@ -6,6 +6,8 @@ I started working on a .Net Core 2.0 project that I intended to deploy to the Ra
 
 Not finding anything else to fill the immediate need, I banged this library out with pure .Net Standard calls and it worked great for me.  I suspecteded there might be other folks in the same boat, and so I published it as a Nuget package.
 
+https://www.nuget.org/packages/NetStandardLogging/
+
 To use the logger, add this example section below to your config.json or applicationsettings.json, or create a separate NetStandardLogging.json file with just this section in it.
 
 After you get it up and running, tailor the settings to your liking.  I modeled the settings and the date formatting to work like NLog.
