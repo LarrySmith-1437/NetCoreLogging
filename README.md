@@ -44,5 +44,5 @@ Log entries are written by calling the method with the name of the log level. Ex
 ```
     logger.Debug("This is a debug message.");
     logger.Info("And this is an info message");
-    logger.Info("This is an error, and an exception with it", new ApplicationException("My Exception"));
+    logger.Error("This is an error, and an exception with it", new ApplicationException("My Exception"));
 ```
