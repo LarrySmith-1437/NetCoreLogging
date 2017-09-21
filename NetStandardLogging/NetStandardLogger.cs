@@ -99,7 +99,7 @@ namespace NetStandardLogging
 
             if (exception != null)
             {
-                logContent += exception.StackTrace + Environment.NewLine;
+                logContent += $">>>Exception Message: {exception.Message}{Environment.NewLine}{exception.StackTrace}{Environment.NewLine}";
             }
 
             //if Console logging enabled, write to Console
