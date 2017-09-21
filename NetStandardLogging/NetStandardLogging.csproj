@@ -13,9 +13,10 @@ See the test project under the project URL for usage and a sample config section
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/LarrySmith-1437/NetStandardLogging</PackageProjectUrl>
     <PackageTags>NetStandard2.0</PackageTags>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
-    <FileVersion>1.0.2.0</FileVersion>
-    <Version>1.0.2</Version>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
+    <FileVersion>1.0.3.0</FileVersion>
+    <Version>1.0.3</Version>
+    <PackageReleaseNotes>As of this release, no longer requires separate interface for IAppLogger. It is included in this package.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,10 +24,6 @@ See the test project under the project URL for usage and a sample config section
     <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="2.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="2.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\NetStandardLoggingInterface\NetStandardLoggingInterface.csproj" />
   </ItemGroup>
 
 </Project>
