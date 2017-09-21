@@ -24,3 +24,25 @@ After you get it up and running, tailor the settings to your liking.  I modeled 
     "LogFileName": "svclog_{date:format=yyyy-MM-dd}.log",
     "LogToConsole": "true"
   }
+```
+
+Like other loggers this one uses discreet log levels in this order of precedence:
+
+```
+    public enum LogLevel
+    {
+        Debug = 0,
+        Info = 1,
+        Warn = 2,
+        Error = 3,
+        Fatal = 4
+    }
+```
+
+Log entries are written by calling the method with the name of the log level. Example:
+
+```
+    logger.Debug("This is a debug message.");
+    logger.Info("And this is an info message");
+    logger.Info("This is an error, and an exception with it", new ApplicationException("My Exception"));
+```
