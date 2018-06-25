@@ -5,18 +5,23 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Lawrence M. Smith</Authors>
     <Company>Lawrence M. Smith Consulting, LLC</Company>
-    <Description>Provides the most basic functionality of logging for .Net Standard 2.0 and .Net Core 2.0 projects.
+    <Description>Consider this a bridge solution until the big gun loggers like Log4Net or NLog catch up with .Net Core/Standard 2.0
+
+Provides the most basic functionality of logging for .Net Standard 2.0 and .Net Core 2.0 projects.
 The project allows logging to a file or the console, with timestamps, and with the minimal of a json config file.
+Use this if you require a *PURE* .Net Core app such as what would be needed to run under Linux with an ARM processor (think: Raspberry Pi) where extended .Net Framework functionality is not allowed.
+
+See the test project under the project URL on GitHub for usage and a sample config section.
 
 See the test project under the project URL for usage and a sample config section.</Description>
     <Copyright>2017</Copyright>
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/LarrySmith-1437/NetStandardLogging</PackageProjectUrl>
     <PackageTags>NetStandard2.0</PackageTags>
-    <AssemblyVersion>1.0.3.0</AssemblyVersion>
-    <FileVersion>1.0.3.0</FileVersion>
-    <Version>1.0.3</Version>
-    <PackageReleaseNotes>As of this release, no longer requires separate interface for IAppLogger. It is included in this package.</PackageReleaseNotes>
+    <AssemblyVersion>1.0.4.0</AssemblyVersion>
+    <FileVersion>1.0.4.0</FileVersion>
+    <Version>1.0.4</Version>
+    <PackageReleaseNotes>Fixed defect related to logging an exception's Message.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
